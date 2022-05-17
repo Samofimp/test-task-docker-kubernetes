@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Current date and time</title>
+    </head>
+    <body>
+        <style>
+            p { display: inline }
+        </style>
+
+        <h2>Current date and time:</h2>
+        <p><p id="date"></p><p>&ensp;</p><p id="time"></p></p>
+
+        <script>
+            function write_date_time() {
+                var current_date_time = new Date();
+                var current_date_string = `${current_date_time.getDate()}-${current_date_time.getMonth()+1}-${current_date_time.getFullYear()}`;
+                document.getElementById("date").innerHTML = current_date_string;
+                var current_time_string = `${current_date_time.getHours()}:${current_date_time.getMinutes()}:${current_date_time.getSeconds().toString().padStart(2, '0')}`;
+                document.getElementById("time").innerHTML = current_time_string;
+            }
+
+            var update_interval = setInterval(write_date_time, 500);
+        </script>
+
+    </body>
+</html>
