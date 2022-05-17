@@ -16,7 +16,7 @@
                 var current_date_time = new Date();
                 var current_date_string = `${current_date_time.getDate()}-${current_date_time.getMonth()+1}-${current_date_time.getFullYear()}`;
                 document.getElementById("date").innerHTML = current_date_string;
-                var current_time_string = `${current_date_time.getHours()}:${current_date_time.getMinutes()}:${current_date_time.getSeconds().toString().padStart(2, '0')}`;
+                var current_time_string = `${current_date_time.getHours().toString().padStart(2, '0')}:${current_date_time.getMinutes().toString().padStart(2, '0')}:${current_date_time.getSeconds().toString().padStart(2, '0')}`;
                 document.getElementById("time").innerHTML = current_time_string;
             }
 
