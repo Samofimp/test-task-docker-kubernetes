@@ -1,6 +1,6 @@
-# Docker/Kubernetes excercise
+# Docker/Kubernetes exercise
 
-This repository holds results of Docker/Kubernetes excercise.
+This repository holds results of Docker/Kubernetes exercise.
 
 [**Dockerfile**](./Dockerfile) contains a set of instructions to build a Docker image that serves a web page with Nginx server.
 
