@@ -79,6 +79,8 @@ Install pip3 requirements described in [requirements.txt](./python-src/requireme
 pip3 install -r requirements.txt
 ```
 
+[Download](https://chromedriver.chromium.org/downloads) ChromeDriver according to your platform and Google Chrome version and add it to one of your ```$PATH``` directories.
+
 Make port forward to the deployed k8s service:
 ```
 kubectl port-forward service/<k8s service name> <local port>:<k8s service port> [-n <namespace if not default>]
