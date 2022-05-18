@@ -86,5 +86,5 @@ kubectl port-forward service/<k8s service name> <local port>:<k8s service port> 
 
 Then run the [Python script](./python-src/test-connection.py):
 ```
-python3 test-connection.py http://localhost<local port>
+python3 test-connection.py http://localhost:<local port>
 ```
